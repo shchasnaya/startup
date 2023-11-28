@@ -1,0 +1,28 @@
+@import "./utils/variables";
+
+* {
+  font-family: Ubuntu, sans-serif;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.app {
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}

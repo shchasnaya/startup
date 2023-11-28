@@ -1,0 +1,43 @@
+@import "../../../../utils/variables";
+@import "../../../../utils/input/input_mixin";
+
+.select-criteria__select {
+  margin-top: 16px;
+  display: flex;
+
+  &__radio-button-input {
+    @include input
+  }
+
+  &__custom-radio {
+    @include custom-radio-set-criteria
+  }
+
+  &__radio-button-input:checked + &__custom-radio {
+    position: relative;
+  }
+
+  &__radio-button-input:checked + &__custom-radio::before {
+    @include custom-radio-checked
+  }
+
+  &__title {
+    display: flex;
+    align-items: stretch;
+    min-width: 220px;
+    width: 200px;
+    color: $color-primary-black;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+  }
+
+  &__description {
+    color: $grey-profile-color;
+    padding-top: 4px;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: middle;
+  }
+}

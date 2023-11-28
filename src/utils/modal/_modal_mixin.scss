@@ -1,0 +1,105 @@
+@import "../variables";
+
+@mixin modal-mixin {
+  padding: 60px 40px;
+
+  &_active {
+    display: block;
+  }
+
+  &_hidden {
+    display: none;
+  }
+
+  &__title {
+    font-size: 28px;
+    color: $color-primary-black;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    font-size: 20px;
+    color: $color-primary-gray-1;
+    font-style: normal;
+    line-height: 24px;
+    white-space: pre-wrap;
+  }
+
+  &_mt40 {
+    margin-top: 40px;
+  }
+}
+
+@mixin input-field {
+  display: block;
+  margin-top: 40px;
+  width: 280px;
+  min-height: 26px;
+  border: none;
+  border-bottom: 1px solid $color-primary-black;
+  outline: none;
+
+  &_w440 {
+    width: 440px;
+  }
+
+  &_w600 {
+    width: 600px;
+  }
+
+  &::placeholder {
+    color: $color-primary-gray-1;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &_invalid {
+    border-bottom: 1px solid $color-secondary-orange;
+  }
+
+  &_valid {
+    border-bottom: 1px solid $color-secondary-green;
+  }
+}
+
+@mixin input-select {
+  display: block;
+  margin-top: 40px;
+  width: 280px;
+  min-height: 26px;
+  border: none;
+  border-bottom: 1px solid $color-primary-black;
+  outline: none;
+  padding: 0;
+
+  &_option {
+    background-color: $color-primary-white;
+    color: $color-primary-black;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &_invalid {
+    border-bottom: 1px solid $color-secondary-orange;
+  }
+
+  &_valid {
+    border-bottom: 1px solid $color-secondary-green;
+  }
+}
+
+@mixin error-input-field {
+  width: 100%;
+  position: absolute;
+
+  &_text {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 10px;
+    line-height: 12px;
+    color: $color-secondary-orange;
+  }
+}

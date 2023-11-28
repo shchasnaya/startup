@@ -1,0 +1,99 @@
+@import "../../../utils/variables";
+
+.main-screen {
+  position: relative;
+  min-height: 768px;
+  overflow: hidden;
+
+  &__img {
+    position: absolute;
+
+    &_background {
+      top: 0;
+      margin-left: 657px;
+      z-index: -2;
+    }
+
+    &_best {
+      top: 77px;
+      margin-left: 135px;
+    }
+
+    &_idea {
+      top: 101px;
+      margin-left: 686px;
+      z-index: -1;
+    }
+
+    &_plan {
+      bottom: 31px;
+      margin-left: 419px;
+      z-index: -1;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  &__title {
+    margin: 140px 0 0 21px;
+    width: 504px;
+    color: $color-primary-black;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__description {
+    margin: 24px 0 0 21px;
+    width: 463px;
+    color: $color-primary-gray-1;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__btn {
+    margin: 16px 0 0 21px;
+    width: 190px;
+    height: 42px;
+    background: $color-primary-blue;
+    border: none;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-primary-white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__statistic {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 21px;
+    width: 462px;
+    height: 80px;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__count {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 44px;
+      color: $color-primary-blue;
+    }
+  }
+
+  &_best {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

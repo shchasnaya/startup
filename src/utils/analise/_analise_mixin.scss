@@ -1,0 +1,105 @@
+@import "../variables";
+
+@mixin navigation-btn {
+  position: relative;
+  display: flex;
+  margin: 60px 0 120px 0;
+  justify-content: space-between;
+
+  &__notSubmit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-secondary-orange;
+  }
+
+  &_right {
+    justify-content: right;
+  }
+
+  &__btn {
+    display: block;
+
+    &_hidden {
+      display: none;
+    }
+  }
+}
+
+@mixin analise-tree {
+  position: relative;
+  margin-top: 16px;
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+
+  &_mt24 {
+    margin-top: 24px;
+  }
+
+  &_mt40 {
+    margin-top: 40px
+  }
+
+  &_mt60 {
+    margin-top: 60px;
+  }
+
+  &_active {
+    transition: 0.4s all;
+  }
+
+  &_hidden {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    display: block;
+    cursor: pointer;
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__description {
+    margin-top: 8px;
+    color: $color-secondary-grey-2;
+    line-height: 20px;
+  }
+
+  &__divider {
+    margin-top: 8px;
+    height: 2px;
+    width: 100%;
+    background-color: $color-secondary-grey-1;
+  }
+
+  &__ml40 {
+    margin-left: 40px;
+  }
+
+  &__ml72 {
+    margin-left: 72px;
+  }
+
+  &__ml80 {
+    margin-left: 72px;
+  }
+
+  &__ml110 {
+    margin-left: 110px;
+  }
+
+  &__ml120 {
+    margin-left: 110px;
+  }
+}

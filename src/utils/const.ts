@@ -1,0 +1,7 @@
+export const LANDING_ROUTE = '/about/*'
+export const PROFILE_ROUTE = '/profile'
+export const ANALISE_ROUTE = '/analise'
+export const PROFILE_ABOUT_ROUTE = '/profile/about'
+export const PROFILE_STATISTICS_ROUTE = '/profile/statistics'
+export const PARAMS_STATISTICS_ROUTE = '/profile/criteria'
+export const SET_CRITERIA_ROUTE = '/set-criteria'

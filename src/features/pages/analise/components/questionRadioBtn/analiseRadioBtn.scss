@@ -1,0 +1,40 @@
+@import "../../../../../utils/variables";
+@import "../../../../../utils/input/input_mixin";
+
+.analise__rb {
+  &__answer {
+    margin: 24px 0 0 40px;
+
+    &_mt16 {
+      margin-top: 16px;
+    }
+
+    &_mt8 {
+      margin-top: 8px;
+    }
+
+    &_ml0 {
+      margin-left: 0;
+    }
+
+    &__radio-button-input {
+      @include input
+    }
+
+    &__custom-radio {
+      @include custom-radio
+    }
+
+    &__radio-button-input:checked + &__custom-radio {
+      position: relative;
+    }
+
+    &__radio-button-input:checked + &__custom-radio::before {
+      @include custom-radio-checked
+    }
+
+    &__title {
+      @include input-title
+    }
+  }
+}

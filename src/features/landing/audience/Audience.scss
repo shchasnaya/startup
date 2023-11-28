@@ -1,0 +1,42 @@
+@import "../../../utils/variables";
+
+.audience-section {
+  min-height: 894px;
+
+  &__title {
+    padding-top: 120px;
+    color: $color-primary-black;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: center;
+  }
+}
+
+.audience {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px auto 0 auto;
+  width: 946px;
+
+  & > div {
+    width: 302px;
+    height: 194px;
+  }
+
+  &__text {
+    margin-top: 8px;
+    font-size: 16px;
+    color: $color-primary-black;
+  }
+
+  &__img {
+    position: absolute;
+    top: -181px;
+    left: -277px;
+    z-index: -1;
+  }
+}

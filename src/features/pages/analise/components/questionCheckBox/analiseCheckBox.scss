@@ -1,0 +1,28 @@
+@import "../../../../../utils/variables";
+@import "../../../../../utils/input/input_mixin";
+
+.analise__cb {
+  &__answer {
+    margin: 24px 0 0 40px;
+
+    &_mt16 {
+      margin-top: 16px;
+    }
+
+    &__checkbox-input {
+      @include input
+    }
+
+    &__custom-checkbox {
+      @include custom-checkbox
+    }
+
+    &__checkbox-input:checked + &__custom-checkbox {
+      @include custom-checkbox-checked;
+    }
+
+    &__title {
+      @include input-title
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../utils/variables";
+@import "../../../utils/modal/modal_mixin";
+
+.registration {
+  width: 1000px;
+  height: 612px;
+
+  @include modal-mixin;
+
+  &__input {
+    @include input-field;
+
+  }
+
+  &__select {
+    @include input-select;
+  }
+
+  &__form {
+
+    &_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+    }
+
+    &_ml40 {
+      margin-left: 40px;
+    }
+  }
+
+  &__error {
+    @include error-input-field;
+  }
+}

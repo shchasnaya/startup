@@ -1,0 +1,20 @@
+.custom-scroll-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.custom-scroll-content {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.custom-scroll-bar {
+  position: absolute;
+  width: 8px; /* Ширина полосы прокрутки */
+  background-color: #ccc; /* Цвет полосы прокрутки */
+  border-radius: 4px;
+  right: 0;
+  transition: top 0.2s;
+}

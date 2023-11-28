@@ -1,0 +1,64 @@
+@import "../../../utils/variables";
+@import "../../../utils/analise/analise_mixin";
+
+.analise {
+
+  &__block {
+    display: block;
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__item-question {
+    position: relative;
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+
+    &_active {
+      transition: 0.4s all;
+    }
+
+    &_hidden {
+      position: absolute;
+      transform: scale(0);
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__item {
+    @include analise-tree;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+
+      &_root {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__question {
+    display: block;
+    margin: 16px 0 0 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $color-primary-black;
+
+    &_mt24 {
+      margin-top: 24px;
+    }
+  }
+
+  &__navigation {
+    @include navigation-btn;
+  }
+
+}

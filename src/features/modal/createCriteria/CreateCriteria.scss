@@ -1,0 +1,36 @@
+@import "../../../utils/variables";
+@import "../../../utils/modal/modal_mixin";
+
+.create-criteria {
+  width: 946px;
+  height: 398px;
+  @include modal-mixin;
+
+  &__input {
+    @include input-field;
+  }
+
+  &__error {
+    @include error-input-field;
+  }
+
+  &__success {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 632px;
+    margin-top: 16px;
+
+    & > div:last-child {
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-primary-black;
+      margin-left: 12px;
+    }
+
+    &_btn {
+      display: block;
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../../utils/variables";
+@import "../../../utils/analise/analise_mixin";
+@import "../../../utils/mixin";
+
+.parameter {
+
+  &__title {
+    margin-top: 26px;
+    font-size: 28px;
+    color: $color-primary-black;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__item {
+    @include analise-tree
+  }
+
+  &__navigation {
+    @include navigation-btn
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../../utils/variables";
+
+.review {
+  min-height: 652px;
+}
+
+.slider {
+  margin: 40px 97px 0 97px;
+  position: relative;
+
+  &__item {
+    position: relative;
+    display: block;
+    width: 302px;
+    height: 302px;
+    border: 1px solid $color-secondary-grey-1;
+    overflow: visible;
+
+    & > div:first-child {
+      margin: 24px 12px 0 12px;
+    }
+
+    &_name {
+      font-size: 20px;
+      color: $color-primary-black;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    &_position {
+      font-size: 14px;
+      margin-top: 4px;
+      line-height: 20px;
+      color: $color-primary-gray-1;
+    }
+
+    & > div:last-child {
+      position: absolute;
+      top: 106px;
+      left: 12px;
+      right: 12px;
+    }
+
+    &_stars {
+
+    }
+
+    &_comment {
+      margin-top: 10px;
+      font-size: 14px;
+      color: $color-primary-gray-1;
+      font-weight: 400;
+      line-height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 129px;
+
+    &_left {
+      left: -64px;
+    }
+
+    &_right {
+      right: -64px;
+    }
+  }
+
+  &__bullet {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    &_item {
+      width: 12px;
+      height: 12px;
+      background: $color-secondary-grey-1;
+      border-radius: 100%;
+      margin: 0 6px;
+    }
+
+    &_item.active {
+      background: $color-primary-blue;
+    }
+  }
+}
+
+

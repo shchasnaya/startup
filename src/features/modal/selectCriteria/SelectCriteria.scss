@@ -1,0 +1,40 @@
+@import "../../../utils/variables";
+
+.select-criteria {
+  width: 946px;
+  height: 696px;
+  padding: 60px 40px;
+  overflow-y: auto;
+
+  &__title {
+    color: $color-primary-black;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    color: $color-primary-gray-1;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: pre-wrap;
+  }
+
+  &__set_title {
+    color: $color-primary-black;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__divider {
+    margin-top: 8px;
+    border: 1px solid $border-table-color;
+  }
+
+  &__mt24 {
+    margin-top: 24px;
+  }
+}

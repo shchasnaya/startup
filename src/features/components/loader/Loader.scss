@@ -1,0 +1,55 @@
+@import "../../../utils/variables";
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: $border-table-color;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: $color-primary-blue;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: $border-table-color;
+  }
+}
+
+.loader {
+  position: relative;
+  margin: 75px auto;
+  width: 150px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+  div {
+    height: 100%;
+  }
+}
+
+.loader4, .loader4 div {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 4px;
+  animation: rotate2 4s infinite linear;
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+.loader, .loader * {
+  will-change: transform;
+}

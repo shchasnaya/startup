@@ -1,0 +1,13 @@
+.statistic {
+  min-height: 744px;
+
+  &__diagrams {
+    display: flex;
+    justify-content: space-between;
+
+    &_circle {
+      width: 278px;
+      height: 278px;
+    }
+  }
+}

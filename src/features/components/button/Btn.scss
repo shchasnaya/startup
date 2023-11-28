@@ -1,0 +1,66 @@
+@import "../../../utils/variables";
+
+.btn {
+  background-color: $color-primary-blue;
+  color: $color-primary-white;
+
+  &__first {
+    width: 178px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 26px;
+
+    &_active {
+      cursor: pointer;
+
+    }
+
+    &_disable {
+      background-color: $color-secondary-grey-3;
+      cursor: default;
+    }
+  }
+
+  &__second {
+    width: 160px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid $color-primary-blue;
+    background-color: $color-primary-white;
+    color: $color-primary-blue;
+
+    &_active {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-blue;
+        color: $color-primary-white;
+      }
+    }
+
+    &_disable {
+      border: 1px solid $color-secondary-grey-3;
+      background-color: $color-secondary-grey-3;
+      cursor: default;
+    }
+  }
+
+  &__third {
+    width: 168px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 22px;
+
+    &_active {
+      cursor: pointer;
+    }
+
+    &_disable {
+      background-color: $color-secondary-grey-3;
+      cursor: default;
+    }
+  }
+
+
+}

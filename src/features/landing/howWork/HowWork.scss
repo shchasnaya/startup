@@ -1,0 +1,127 @@
+@import "../../../utils/variables";
+
+.work {
+  min-height: 822px;
+  background: url("../../../_assets/background/howIsWork.jpg") center;
+}
+
+.text {
+  width: 950px;
+  margin: 0 auto 0 auto;
+  padding-top: 120px;
+  position: relative;
+
+  &__title {
+    color: $color-primary-white;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  &__description {
+    padding-top: 24px;
+    color: $color-primary-white;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__img {
+    position: absolute;
+    left: -90px;
+    top: 105px;
+  }
+}
+
+.step {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 946px;
+  padding-top: 66px;
+  margin: 0 auto;
+
+  & > div {
+    position: relative;
+    width: 302px;
+    height: 302px;
+    background-color: $color-primary-white;
+  }
+
+  &__img {
+
+    &_icon {
+      margin: 40px 0 0 20px;
+    }
+
+    &_go {
+      margin: 17px 0 0 20px;
+    }
+
+    &_progress {
+      position: absolute;
+      bottom: -94px;
+      right: -63px;
+    }
+
+    &_investment {
+      position: absolute;
+      top: 22px;
+      left: 300px;
+    }
+  }
+
+  &__title {
+    margin: 12px 0 0 20px;
+    width: 245px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color-primary-black;
+
+    &_center {
+      width: 142px;
+    }
+  }
+
+  &__description {
+    margin: 16px 0 0 20px;
+    width: 180px;
+    color: $color-primary-black;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: 262px;
+    display: flex;
+    justify-content: space-between;
+
+    & > div:first-child {
+      width: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__line {
+      width: 10px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $color-secondary-grey-1;
+
+      &_active {
+        width: 20px;
+        background-color: $color-primary-blue;
+      }
+    }
+
+    &__number {
+      color: $color-primary-black;
+      font-size: 18px;
+    }
+  }
+}

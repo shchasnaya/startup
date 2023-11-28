@@ -1,0 +1,50 @@
+@import "../../../utils/variables";
+@import "../../../utils/modal/modal_mixin";
+
+.authorization {
+  width: 946px;
+  height: 550px;
+
+  @include modal-mixin;
+
+  &__input {
+    @include input-field;
+  }
+
+  &__error {
+    @include error-input-field;
+  }
+
+  &__forget-password {
+    width: 178px;
+    height: 20px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-primary-black;
+  }
+
+  &__not-account {
+    display: flex;
+    margin-top: 40px;
+
+    &_title {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      color: $color-primary-black;
+    }
+
+    &_btn {
+      margin-left: 2px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      text-decoration-line: underline;
+      color: $color-primary-blue;
+    }
+  }
+}

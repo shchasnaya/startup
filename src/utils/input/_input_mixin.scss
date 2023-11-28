@@ -1,0 +1,61 @@
+@import "../variables";
+
+@mixin input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin custom-radio {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 3px 12px 0 0;
+  cursor: pointer;
+  border: 1px solid $color-primary-blue;
+}
+
+@mixin custom-radio-set-criteria {
+  @include custom-radio;
+  margin-top: 5px;
+}
+
+@mixin custom-radio-checked {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-primary-blue;
+}
+
+@mixin custom-checkbox {
+  margin: 3px 12px 0 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  border: 1px solid $color-primary-blue;
+  cursor: pointer;
+}
+
+@mixin custom-checkbox-checked {
+  height: 16px;
+  width: 16px;
+  border: none;
+  border-radius: 0;
+  background-image: url('../../_assets/icons/pages/active_checkbox.svg');
+}
+
+@mixin input-title {
+  display: flex;
+  align-items: stretch;
+  font-size: 16px;
+  color: $color-primary-black;
+  line-height: 22px;
+  cursor: pointer;
+}

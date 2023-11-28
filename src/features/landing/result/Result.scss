@@ -1,0 +1,51 @@
+@import "../../../utils/variables";
+
+.result-screen {
+  min-height: 616px;
+  background-color: $color-secondary-blue-background;
+
+  &__title {
+    padding-top: 120px;
+    text-align: center;
+    color: $color-primary-black;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.result {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 97px 0 97px;
+
+  & > div {
+    width: 302px;
+    height: 302px;
+    background-color: $color-primary-blue;
+    z-index: 1;
+  }
+
+  &__img {
+    padding-top: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__title {
+    padding-top: 24px;
+    color: $color-primary-white;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    white-space: pre-line;
+    text-align: center;
+  }
+
+  &__vector {
+    position: absolute;
+    left: -25px;
+    top: -40px;
+  }
+}
